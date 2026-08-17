@@ -1,0 +1,37 @@
+name: update-gold
+
+on:
+  schedule:
+    # 每小时整点运行(UTC),= 北京时间 08:00 起每小时;脚本内自行判断交易时段与周末
+    - cron: '0 * * * *'
+  workflow_dispatch: {} # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run update script
+        run: node update.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "gold-bot"
+          git config user.email "gold-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes, skip commit"
+          else
+            git commit -m "auto update $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
