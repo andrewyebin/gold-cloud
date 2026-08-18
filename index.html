@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#F6F3ED">
-<title>伦敦金波段复盘 · 2026-08-16</title>
+<title>伦敦金波段复盘 · 2026-08-18</title>
 <style>
   :root{
     --bg:#F6F3ED; --card:#FFFFFF; --ink:#3A3833; --sub:#8B877C;
@@ -80,7 +80,7 @@
   <header>
     <span class="badge">XAUUSD 复盘 · 实时行情 + 自动更新</span>
     <h1>伦敦金波段复盘</h1>
-    <div class="sub">实时价格每 30 秒自动刷新 · 当天/近两天每小时更新 · 本周每周更新</div>
+    <div class="sub">数据截至 2026-08-18 09:27 · 实时价格每 30 秒自动刷新 · 当天/近两天每小时更新 · 本周每周更新</div>
   </header>
 
   <div class="card">
@@ -97,8 +97,8 @@
         <div>来源:gold-api.com</div>
       </div>
     </div>
-    <div class="src" style="margin-top:10px">现价较本周收盘 4375.7 的涨跌(红涨绿跌);每 30 秒自动刷新,周末休市时显示最近报价。不同行情源之间可能有 ±2 美元口径差异。</div>
-    <div class="alert" id="lxAlert" data-up="4450" data-low="4310">正在判断波段状态…</div>
+    <div class="src" style="margin-top:10px">现价较本周收盘 4416.3 的涨跌(红涨绿跌);每 30 秒自动刷新,周末休市时显示最近报价。不同行情源之间可能有 ±2 美元口径差异。</div>
+    <div class="alert" id="lxAlert" data-up="4450" data-low="4366">正在判断波段状态…</div>
   </div>
 
   <div class="tabs" role="tablist">
@@ -113,12 +113,12 @@
     <div class="card">
       <div class="sec-title">今日概况 · 实时</div>
       <div class="stats">
-        <div class="stat"><div class="k">今日开盘</div><div class="v num" id="tdOpen">4377.1</div></div>
-        <div class="stat"><div class="k">当前价</div><div class="v num up" id="tdPrice">4389.1</div></div>
-        <div class="stat"><div class="k">今日最高</div><div class="v num" id="tdHigh">4416.3</div></div>
-        <div class="stat"><div class="k">今日最低</div><div class="v num" id="tdLow">4366.7</div></div>
+        <div class="stat"><div class="k">今日开盘</div><div class="v num" id="tdOpen">4416.95</div></div>
+        <div class="stat"><div class="k">当前价</div><div class="v num up" id="tdPrice">4423.32</div></div>
+        <div class="stat"><div class="k">今日最高</div><div class="v num" id="tdHigh">4435.73</div></div>
+        <div class="stat"><div class="k">今日最低</div><div class="v num" id="tdLow">4409.23</div></div>
       </div>
-      <div class="src" style="margin-top:10px" id="tdSrc">静态快照截至 10:55(金投网)· 当前价每 30 秒自动刷新,今日高低随现价动态跟踪</div>
+      <div class="src" style="margin-top:10px" id="tdSrc">静态快照截至 09:27 · 金投网 09:27:开 4416.95/高 4435.73/低 4409.23/现 4423.32(+0.16%);gold-api 09:29 现价 4425.90(±3 差异) · 当前价每 30 秒自动刷新,今日高低随现价动态跟踪</div>
       <div class="alert" id="tdAlert">行情加载中…</div>
     </div>
 
@@ -128,29 +128,30 @@
         <table>
           <thead><tr><th>#</th><th>时段</th><th>方向</th><th>区间(约)</th><th>差值</th></tr></thead>
           <tbody id="tdBands">
-          <tr><td class="num">1</td><td>早盘 07:50→09:40</td><td><span class="tag up">↑</span></td><td class="num">4366.7→4416.3</td><td class="num up">+50</td></tr>
+          <tr><td class="num">—</td><td>8/18 早盘 4409.2→4435.7</td><td><span class="tag up">↑</span></td><td class="num">4409.2→4435.7</td><td class="num up">+26.5(未达30)</td></tr>
           </tbody>
         </table>
       </div>
-      <div class="src" style="margin-top:8px">行情进行中,新波段每小时自动补充;早盘下探 4366.7(-10)与冲高回落(-27)差值不足 30 未列入。</div>
+      <div class="src" style="margin-top:8px">行情进行中,新波段每小时自动补充;8/18 高开 4416.95 后早盘回踩 4409.23,再冲高至 4435.73(+26.5)逼近 4450,截至 09:27 尚无差值 ≥30 的波段;8/20 凌晨美联储 7 月 FOMC 纪要公布前,预计以高位震荡为主。</div>
     </div>
 
     <div class="card">
-      <div class="sec-title">今日走势规律</div>
-      <ol class="rules">
-        <li><b>低开探底后快速拉升</b> — 开盘 4377 小幅回踩 4366.7 后一路冲高,9:40 前后突破 4400 触及 4416.3,盘中最高涨幅约 +0.9%。</li>
-        <li><b>冲高后回落整理</b> — 4400 上方抛压再现,现回落至 4389 附近中高位震荡,4400-4416 仍是短期压力。</li>
-        <li><b>驱动仍是弱美元</b> — 美元指数跌至 99.5(-0.2%),上周零售/CPI/PPI 弱数据持续发酵,叠加央行购金托底;今日走势延续 6 月底以来约 10% 的上涨行情。</li>
+      <div class="sec-title">今日走势规律 · 每小时自动更新</div>
+      <ol class="rules" id="tdRules">
+        <li><b>高开后先抑后扬、逼近 4450</b> — 8/18 高开 4416.95,早盘回踩 4409.23(06:40 时段低 4410.73)后单边上冲,09:20 前后触及 4435.73,距 4450 铁顶仅约 14 点,现价 4423.32 高位运行;早盘 4409.2→4435.7(+26.5)仍未达 30 美元,尚无达标波段。</li>
+        <li><b>4400 上方拉锯、100 日线托底</b> — 100 日均线约 4400,4410-4420 是多空僵持区;现价站稳昨收 4416 上方、今日低点 4409 未破,4416-4436 为当前运行带;突破 4436 才谈得上挑战 4450,跌破 4409 则回测 4400 关口。</li>
+        <li><b>驱动不变:弱美元+加息预期降温</b> — 7 月零售销售 -0.6%、非农 -2.3 万、CPI 3.4%、PPI 5.5%→4.7%,9 月加息概率降至 30-33%(CME FedWatch,一周前 48-55%),美元指数 99.3-99.6、连续七周阴跌,10 年期美债收益率 4.7% 上方;二季度全球央行净购金 289 吨(+62%),中国央行连续 21 个月增持(7608 万盎司),购金托底不变。</li>
+        <li><b>焦点:FOMC 纪要+杰克逊霍尔</b> — 8/20 凌晨美联储 7 月纪要(9-3 分裂票型)、8/21 杰克逊霍尔年会,是本周分水岭;美伊 60 天停火协议到期未延期,霍尔木兹通航骤降(周末仅 5 艘 vs 上周末 31 艘),布油 89.8-90.9(+2.65%)、WTI 84-85,油价高企强化通胀担忧、压制金价上行,4450 短期难破。</li>
       </ol>
     </div>
 
     <div class="card">
       <div class="sec-title">今日关键位</div>
       <div class="kv">
-        <div><div class="lab">压力 1</div><div class="val red num">4400-4416 今日高区</div></div>
-        <div><div class="lab">压力 2</div><div class="val red num">4450 本周铁顶</div></div>
-        <div><div class="lab">支撑 1</div><div class="val green num">4366.7 今日低点</div></div>
-        <div><div class="lab">支撑 2</div><div class="val green num">4310 本周强支撑</div></div>
+        <div><div class="lab">压力 1</div><div class="val red num">4436-4450 今日高区/铁顶</div></div>
+        <div><div class="lab">压力 2</div><div class="val red num">4450 本周铁顶(8/13 前高 4449.4)</div></div>
+        <div><div class="lab">支撑 1</div><div class="val green num">4400-4410 整数关/今日低点</div></div>
+        <div><div class="lab">支撑 2</div><div class="val green num">4366-4367 昨日低点</div></div>
       </div>
     </div>
   </div>
@@ -161,88 +162,83 @@
     <div class="card">
       <div class="sec-title">本周概况</div>
       <div class="stats">
-        <div class="stat"><div class="k">周开盘</div><div class="v num">4343</div></div>
-        <div class="stat"><div class="k">周收盘</div><div class="v num up">4375 +0.8%</div></div>
-        <div class="stat"><div class="k">周最高</div><div class="v num">4449.4</div></div>
-        <div class="stat"><div class="k">周最低</div><div class="v num">4310.5</div></div>
+        <div class="stat"><div class="k">周开盘</div><div class="v num">4379.6</div></div>
+        <div class="stat"><div class="k">周收盘</div><div class="v num up">4416.3 +0.8%</div></div>
+        <div class="stat"><div class="k">周最高</div><div class="v num">4435.7</div></div>
+        <div class="stat"><div class="k">周最低</div><div class="v num">4366.7</div></div>
       </div>
-      <div class="src" style="margin-top:10px">单周最大波幅约 139 点 · 8/13 创两个月新高 4449.4</div>
+      <div class="src" style="margin-top:10px">本周进行中(截至 8/18 09:20)· 单周最大波幅约 69 点 · 8/17 收盘站上 4400,8/18 早盘冲 4435.7 逼近前高</div>
     </div>
 
     <div class="chart">
       <svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="本周伦敦金走势">
         <g stroke="rgba(0,0,0,0.08)" stroke-width="1">
-          <line x1="70" y1="310" x2="640" y2="310"/><line x1="70" y1="226" x2="640" y2="226"/>
-          <line x1="70" y1="121.5" x2="640" y2="121.5"/><line x1="70" y1="57" x2="640" y2="57"/>
+          <line x1="70" y1="330" x2="640" y2="330"/><line x1="70" y1="245.6" x2="640" y2="245.6"/>
+          <line x1="70" y1="161.3" x2="640" y2="161.3"/><line x1="70" y1="76.9" x2="640" y2="76.9"/>
         </g>
         <g fill="#8B877C" font-size="11" font-family="sans-serif">
-          <text x="58" y="313" text-anchor="end">4300</text><text x="58" y="229" text-anchor="end">4350</text>
-          <text x="58" y="124" text-anchor="end">4400</text><text x="58" y="60" text-anchor="end">4450</text>
+          <text x="58" y="333" text-anchor="end">4300</text><text x="58" y="249" text-anchor="end">4350</text>
+          <text x="58" y="164" text-anchor="end">4400</text><text x="58" y="80" text-anchor="end">4450</text>
         </g>
-        <line x1="70" y1="57" x2="640" y2="57" stroke="#A98A55" stroke-width="1" stroke-dasharray="4 4"/>
-        <text x="72" y="50" fill="#A98A55" font-size="11" font-family="sans-serif">4450 压力位 · 三次冲高未破(4435/4441/4449)</text>
-        <line x1="70" y1="293" x2="640" y2="293" stroke="#4C7A5B" stroke-width="1" stroke-dasharray="4 4"/>
-        <text x="72" y="332" fill="#4C7A5B" font-size="11" font-family="sans-serif">4310 双底支撑 · 周一/周五两次回踩有效</text>
-        <g stroke="#C9C3B5" stroke-width="1">
-          <line x1="70" y1="288" x2="70" y2="150"/><line x1="212.5" y1="195" x2="212.5" y2="82"/>
-          <line x1="355" y1="188.5" x2="355" y2="72"/><line x1="497.5" y1="229" x2="497.5" y2="58.6"/>
-          <line x1="640" y1="293" x2="640" y2="148"/>
-        </g>
-        <polyline points="70,160 212.5,195 355,128 497.5,229 640,183" fill="none" stroke="#4E7C8B" stroke-width="1.8"/>
+        <line x1="70" y1="76.9" x2="640" y2="76.9" stroke="#A98A55" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="72" y="69" fill="#A98A55" font-size="11" font-family="sans-serif">4450 本周头部 · 8/13 前高 4449.4 未破</text>
+        <line x1="70" y1="186.6" x2="640" y2="186.6" stroke="#4C7A5B" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="72" y="179" fill="#4C7A5B" font-size="11" font-family="sans-serif">4385 100日线/5日线支撑</text>
+        <line x1="70" y1="313.1" x2="640" y2="313.1" stroke="#4C7A5B" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="72" y="306" fill="#4C7A5B" font-size="11" font-family="sans-serif">4310 多头防线</text>
+        <polyline points="70,217.5 212.5,112.5 355,133.8 497.5,101.0 640,118.3" fill="none" stroke="#4E7C8B" stroke-width="1.8"/>
         <g fill="#4E7C8B" stroke="#fff" stroke-width="1.2">
-          <circle cx="70" cy="160" r="3.2"/><circle cx="212.5" cy="195" r="3.2"/><circle cx="355" cy="128" r="3.2"/>
-          <circle cx="497.5" cy="229" r="3.2"/><circle cx="640" cy="183" r="3.2"/>
+          <circle cx="70" cy="217.5" r="3.2"/><circle cx="212.5" cy="112.5" r="3.2"/><circle cx="355" cy="133.8" r="3.2"/>
+          <circle cx="497.5" cy="101.0" r="3.2"/><circle cx="640" cy="118.3" r="3.2"/>
         </g>
         <g font-size="11" font-family="sans-serif">
-          <circle cx="94" cy="158" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="94" y="162" text-anchor="middle" fill="#3A3833">1</text>
-          <circle cx="228" cy="82" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="228" y="86" text-anchor="middle" fill="#3A3833">2</text>
-          <circle cx="196" cy="212" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="196" y="216" text-anchor="middle" fill="#3A3833">3</text>
-          <circle cx="369" cy="72" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="369" y="76" text-anchor="middle" fill="#3A3833">4</text>
-          <circle cx="513" cy="58" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="513" y="62" text-anchor="middle" fill="#3A3833">5</text>
-          <circle cx="624" cy="306" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="624" y="310" text-anchor="middle" fill="#3A3833">6</text>
-          <circle cx="612" cy="166" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="612" y="170" text-anchor="middle" fill="#3A3833">7</text>
+          <circle cx="94" cy="231" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="94" y="235" text-anchor="middle" fill="#3A3833">1</text>
+          <circle cx="228" cy="100" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="228" y="104" text-anchor="middle" fill="#3A3833">2</text>
+          <circle cx="369" cy="148" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="369" y="152" text-anchor="middle" fill="#3A3833">3</text>
+          <circle cx="513" cy="87" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="513" y="91" text-anchor="middle" fill="#3A3833">4</text>
+          <circle cx="624" cy="132" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="624" y="136" text-anchor="middle" fill="#3A3833">5</text>
         </g>
         <g fill="#8B877C" font-size="11" font-family="sans-serif" text-anchor="middle">
-          <text x="70" y="352">8/10 周一</text><text x="212.5" y="352">8/11 周二</text>
-          <text x="355" y="352">8/12 周三</text><text x="497.5" y="352">8/13 周四</text><text x="640" y="352">8/14 周五</text>
+          <text x="70" y="355">8/17 亚盘低</text><text x="212.5" y="355">8/17 美盘高</text>
+          <text x="355" y="355">8/17 收盘</text><text x="497.5" y="355">8/18 早盘高</text><text x="640" y="355">8/18 现价</text>
+        </g>
+        <g font-size="11" font-family="sans-serif" fill="#8B877C" font-weight="500" text-anchor="middle">
+          <text x="141" y="26">8/17 周一</text><text x="569" y="26">8/18 周二</text>
         </g>
       </svg>
     </div>
 
     <div class="card">
-      <div class="sec-title">差值 ≥30 美元的波段 · 共 7 段</div>
+      <div class="sec-title">差值 ≥30 美元的波段 · 共 4 段</div>
       <div class="tbl-wrap">
         <table>
           <tr><th>#</th><th>时段</th><th>方向</th><th>区间(约)</th><th>差值</th></tr>
-          <tr><td class="num">1</td><td>8/10 早盘→收盘</td><td><span class="tag up">↑</span></td><td class="num">4313→4390</td><td class="num up">+77</td></tr>
-          <tr><td class="num">2</td><td>8/11 开盘→盘中高</td><td><span class="tag up">↑</span></td><td class="num">4389→4435</td><td class="num up">+46</td></tr>
-          <tr><td class="num">3</td><td>8/11 高点→收盘</td><td><span class="tag down">↓</span></td><td class="num">4435→4368</td><td class="num down">−67</td></tr>
-          <tr><td class="num">4</td><td>8/12 CPI 后</td><td><span class="tag up">↑</span></td><td class="num">4372→4441</td><td class="num up">+69</td></tr>
-          <tr><td class="num">5</td><td>8/13 开盘→盘中高</td><td><span class="tag up">↑</span></td><td class="num">4409→4449</td><td class="num up">+40</td></tr>
-          <tr><td class="num">6</td><td>8/13 高→8/14 低</td><td><span class="tag down">↓</span></td><td class="num">4449→4310</td><td class="num down">−139</td></tr>
-          <tr><td class="num">7</td><td>8/14 V 型反转</td><td><span class="tag up">↑</span></td><td class="num">4310→4375</td><td class="num up">+65</td></tr>
+          <tr><td class="num">1</td><td>8/17 亚盘低→早盘高</td><td><span class="tag up">↑</span></td><td class="num">4366.7→4416</td><td class="num up">+49</td></tr>
+          <tr><td class="num">2</td><td>8/17 早盘高→美盘初</td><td><span class="tag down">↓</span></td><td class="num">4416→4377</td><td class="num down">−39</td></tr>
+          <tr><td class="num">3</td><td>8/17 美盘初→凌晨高</td><td><span class="tag up">↑</span></td><td class="num">4377→4429</td><td class="num up">+52</td></tr>
+          <tr><td class="num">4</td><td>8/17 凌晨高→尾盘低</td><td><span class="tag down">↓</span></td><td class="num">4429→4398</td><td class="num down">−31</td></tr>
         </table>
       </div>
-      <div class="src" style="margin-top:8px">注:波段6为本周最大单边段(跨两日);8/14 尾盘 4397→4375 的 -21 点不足 30 未列入。</div>
+      <div class="src" style="margin-top:8px">注:波段2、3、4 均为 8/17 日内(亚盘 4367 企稳→4416 受阻→欧盘 4410 附近震荡→美盘初 4377→凌晨 4428.9→尾盘 4398→收 4416.3);8/18 早盘 4409.2→4435.7(+26)不足 30 未列入,行情进行中,新波段每小时自动补充。</div>
     </div>
 
     <div class="card">
       <div class="sec-title">走势规律</div>
       <ol class="rules">
-        <li><b>数据驱动,一步一台阶</b> — 周一涨靠非农、周三涨靠 CPI、周五 V 型靠零售销售,金价本质在交易美联储 9 月加息概率(55%→33%),数据越弱、美元越跌、金价越涨。</li>
-        <li><b>4450 是硬顶</b> — 4435→4441→4449 三次冲高全部受阻,下方 4310 双底(周一、周五两次回踩都弹起),全周就是 4310-4450 箱体。</li>
-        <li><b>形态偏多但未破位</b> — 低点持平(4310/4313)、高点抬高(4435/4441/4449),呈上升楔形,理论向上突破概率大,但 4450 不破就仍是区间市。</li>
-        <li><b>波动快、追高危险</b> — 日均波幅 60-70 点,每次冲高 1-2 小时内就能回吐 40-70 点,短线追突破易被打脸。</li>
-        <li><b>上方有隐形压制 — 油价</b> — 美伊紧张 + 霍尔木兹海峡关闭推高油价,通胀担忧反过来压金价;油价不回落,4450 难有效突破。</li>
+        <li><b>站上 4400,剑指 4450</b> — 8/17 收 4416.3(+0.91%)站稳 4400,凌晨冲 4428.9;8/18 早盘再冲 4435.7,距 4450 前高(8/13 的 4449.4)一步之遥;4450 仍是硬顶,4436-4450 为短期压力带。</li>
+        <li><b>驱动是数据连环爆冷 → 加息预期骤降</b> — 7 月零售 -0.6%(九个月首降)、密歇根信心 51.0、非农疲软、CPI 3.4%/PPI 4.7%;9 月加息概率由 51.2% 骤降至 30-35%(CME),美元破 100 创两个月新低(99.28),2 年期美债收益率降至约 4.16%,持金机会成本大降,是本轮上行最直接支撑。</li>
+        <li><b>头顶利刃:油价与通胀</b> — 美伊谅解备忘录 8/17 到期未续,霍尔木兹通航量降至冰点(周六仅 5 艘 vs 上周末 31 艘),布油 90.9(+2.7%)、WTI 84.5;油价若续涨,通胀担忧或倒逼加息预期回升,这是 4450 难破的核心制约。</li>
+        <li><b>下方刚性托底:央行购金</b> — 二季度全球央行净购金 288.9 吨(同比 +62%,创二季度新高),中国央行连续 21 个月增持,SPDR 黄金 ETF 连续净流入;4310-4385 是多头防线,回调即承接。</li>
+        <li><b>焦点:8/20 凌晨 FOMC 纪要</b> — 7 月纪要(9-3 分裂票型)北京时间 8/20 凌晨 2 点公布,是本周分水岭;纪要偏鸽 → 冲 4450 甚至 4530,偏鹰/措辞保留 → 回踩 4385 一线,4310 为终极防守。</li>
       </ol>
     </div>
 
     <div class="card">
       <div class="sec-title">后市关键位</div>
       <div class="kv">
-        <div><div class="lab">压力 1</div><div class="val red num">4450 本周头部</div></div>
-        <div><div class="lab">压力 2</div><div class="val red num">4503 200日均线</div></div>
-        <div><div class="lab">支撑 1</div><div class="val green num">4375-4388 收盘/100日线</div></div>
+        <div><div class="lab">压力 1</div><div class="val red num">4436-4450 头部(今高/前高)</div></div>
+        <div><div class="lab">压力 2</div><div class="val red num">4530 0.618 黄金分割</div></div>
+        <div><div class="lab">支撑 1</div><div class="val green num">4385-4390 100日线/5日线</div></div>
         <div><div class="lab">支撑 2</div><div class="val green num">4310 多头防线</div></div>
       </div>
     </div>
@@ -254,12 +250,12 @@
     <div class="card">
       <div class="sec-title">两日概况</div>
       <div class="stats">
-        <div class="stat"><div class="k">8/13 收盘</div><div class="v num down">4350.9 −1.3%</div></div>
-        <div class="stat"><div class="k">8/14 收盘</div><div class="v num up">4375.8 +0.6%</div></div>
-        <div class="stat"><div class="k">两日最高</div><div class="v num">4449.7</div></div>
-        <div class="stat"><div class="k">两日最低</div><div class="v num">4310.5</div></div>
+        <div class="stat"><div class="k">8/17 收盘</div><div class="v num up">4416.3 +0.92%</div></div>
+        <div class="stat"><div class="k">8/18 现价</div><div class="v num up">4423.32 +0.16%</div></div>
+        <div class="stat"><div class="k">两日最高</div><div class="v num">4435.73</div></div>
+        <div class="stat"><div class="k">两日最低</div><div class="v num">4366.7</div></div>
       </div>
-      <div class="src" style="margin-top:10px">8/13 冲高跳水(利好出尽)· 8/14 深V反转(数据救场)</div>
+      <div class="src" style="margin-top:10px">8/17 低开高走站稳 4400(亚盘 4367→4416,美盘初 4377→纽约尾盘 4428.87→收 4416.3,较 8/14 收盘 4375.8 涨 +0.92%)· 8/18 高位窄幅震荡(进行中,金投网 09:27 报 4423.32,+0.16% vs 昨收,早盘回踩 4409.23 后冲 4435.73);8/17 收盘多源口径 4416.17-4416.75,取 4416.3</div>
     </div>
 
     <div class="chart">
@@ -273,78 +269,77 @@
           <text x="58" y="144" text-anchor="end">4400</text><text x="58" y="60" text-anchor="end">4450</text>
         </g>
         <line x1="70" y1="56.9" x2="640" y2="56.9" stroke="#A98A55" stroke-width="1" stroke-dasharray="4 4"/>
-        <text x="72" y="50" fill="#A98A55" font-size="11" font-family="sans-serif">4450-4500 铁顶 · 三次冲高失败</text>
-        <line x1="70" y1="293.1" x2="640" y2="293.1" stroke="#4C7A5B" stroke-width="1" stroke-dasharray="4 4"/>
-        <text x="72" y="332" fill="#4C7A5B" font-size="11" font-family="sans-serif">4310 强支撑 · 4300 多头生死线</text>
+        <text x="72" y="50" fill="#A98A55" font-size="11" font-family="sans-serif">4450 铁顶 · 三冲未破</text>
+        <line x1="70" y1="141.3" x2="640" y2="141.3" stroke="rgba(169,138,85,0.55)" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="72" y="163" fill="#A98A55" font-size="11" font-family="sans-serif">4400 关口 · 100日线托底</text>
+        <line x1="70" y1="197.4" x2="640" y2="197.4" stroke="#4C7A5B" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="72" y="211" fill="#4C7A5B" font-size="11" font-family="sans-serif">4366 昨日低点 · 箱体下沿</text>
         <line x1="355" y1="40" x2="355" y2="320" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-dasharray="2 3"/>
-        <polyline points="70,126 141.25,57.4 212.5,202.7 283.75,158.1 355,222.25 426.25,292.3 497.5,259.4 568.75,146.6 640,182.1" fill="none" stroke="#4E7C8B" stroke-width="1.8"/>
+        <polyline points="70,197.4 141.25,113.7 212.5,159.8 283.75,180.0 355,113.7 426.25,112.6 497.5,125.6 568.75,80.9 640,101.8" fill="none" stroke="#4E7C8B" stroke-width="1.8"/>
         <g fill="#4E7C8B" stroke="#fff" stroke-width="1.2">
-          <circle cx="70" cy="126" r="3.2"/><circle cx="141.25" cy="57.4" r="3.2"/><circle cx="212.5" cy="202.7" r="3.2"/>
-          <circle cx="283.75" cy="158.1" r="3.2"/><circle cx="355" cy="222.25" r="3.2"/><circle cx="426.25" cy="292.3" r="3.2"/>
-          <circle cx="497.5" cy="259.4" r="3.2"/><circle cx="568.75" cy="146.6" r="3.2"/><circle cx="640" cy="182.1" r="3.2"/>
+          <circle cx="70" cy="197.4" r="3.2"/><circle cx="141.25" cy="113.7" r="3.2"/><circle cx="212.5" cy="159.8" r="3.2"/>
+          <circle cx="283.75" cy="180.0" r="3.2"/><circle cx="355" cy="113.7" r="3.2"/><circle cx="426.25" cy="112.6" r="3.2"/>
+          <circle cx="497.5" cy="125.6" r="3.2"/><circle cx="568.75" cy="80.9" r="3.2"/><circle cx="640" cy="101.8" r="3.2"/>
         </g>
         <g font-size="11" font-family="sans-serif">
-          <circle cx="118" cy="44" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="118" y="48" text-anchor="middle" fill="#3A3833">1</text>
-          <circle cx="188" cy="130" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="188" y="134" text-anchor="middle" fill="#3A3833">2</text>
-          <circle cx="315" cy="190" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="315" y="194" text-anchor="middle" fill="#3A3833">3</text>
-          <circle cx="456" cy="276" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="456" y="280" text-anchor="middle" fill="#3A3833">4</text>
-          <circle cx="597" cy="225" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="597" y="229" text-anchor="middle" fill="#3A3833">5</text>
+          <circle cx="165" cy="120" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="165" y="124" text-anchor="middle" fill="#3A3833">1</text>
+          <circle cx="236" cy="173" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="236" y="177" text-anchor="middle" fill="#3A3833">2</text>
+          <circle cx="308" cy="194" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="308" y="198" text-anchor="middle" fill="#3A3833">3</text>
+          <circle cx="521" cy="139" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="521" y="143" text-anchor="middle" fill="#3A3833">4</text>
+          <circle cx="592" cy="87" r="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.8"/><text x="592" y="91" text-anchor="middle" fill="#3A3833">5</text>
         </g>
         <g fill="#8B877C" font-size="11" font-family="sans-serif" text-anchor="middle">
-          <text x="70" y="352">8/13 开盘</text><text x="212.5" y="352">8/13 午后</text>
-          <text x="355" y="352">8/13 收盘</text><text x="497.5" y="352">8/14 欧盘</text><text x="640" y="352">8/14 收盘</text>
+          <text x="70" y="352">8/17 亚盘低</text><text x="212.5" y="352">8/17 午后回踩</text>
+          <text x="355" y="352">8/17 收盘</text><text x="497.5" y="352">8/18 早盘低</text><text x="640" y="352">8/18 现价</text>
         </g>
         <g font-size="11" font-family="sans-serif" fill="#8B877C" font-weight="500" text-anchor="middle">
-          <text x="175" y="26">8/13 周四</text><text x="533" y="26">8/14 周五</text>
+          <text x="200" y="26">8/17 周一</text><text x="520" y="26">8/18 周二</text>
         </g>
       </svg>
     </div>
 
     <div class="card">
-      <div class="sec-title">差值 ≥30 美元的波段 · 共 5 段</div>
+      <div class="sec-title">差值 ≥30 美元的波段 · 共 3 段</div>
       <div class="tbl-wrap">
         <table>
           <tr><th>#</th><th>时段</th><th>方向</th><th>区间(约)</th><th>差值</th></tr>
-          <tr><td class="num">1</td><td>8/13 亚盘 9点</td><td><span class="tag up">↑</span></td><td class="num">4409→4449.7</td><td class="num up">+41</td></tr>
-          <tr><td class="num">2</td><td>8/13 午后欧盘</td><td><span class="tag down">↓</span></td><td class="num">4449.7→4363.6</td><td class="num down">−86</td></tr>
-          <tr><td class="num">3</td><td>8/13 美盘→尾盘</td><td><span class="tag down">↓</span></td><td class="num">4390→4350.9</td><td class="num down">−39</td></tr>
-          <tr><td class="num">4</td><td>8/14 亚盘</td><td><span class="tag down">↓</span></td><td class="num">4353→4310.5</td><td class="num down">−43</td></tr>
-          <tr><td class="num">5</td><td>8/14 美盘 19:50后</td><td><span class="tag up">↑</span></td><td class="num">4310.5→4396.8</td><td class="num up">+86</td></tr>
+          <tr><td class="num">1</td><td>8/17 亚盘 07:50→09:40</td><td><span class="tag up">↑</span></td><td class="num">4366.7→4416.3</td><td class="num up">+50</td></tr>
+          <tr><td class="num">2</td><td>8/17 早盘高→美盘初</td><td><span class="tag down">↓</span></td><td class="num">4416.3→4377</td><td class="num down">−39</td></tr>
+          <tr><td class="num">3</td><td>8/17 美盘初→纽约尾盘</td><td><span class="tag up">↑</span></td><td class="num">4377→4428.9</td><td class="num up">+52</td></tr>
         </table>
       </div>
-      <div class="src" style="margin-top:8px">注:波段5 为深V右半边,当晚零售销售意外 -0.6%、美元失守 100 触发;8/14 尾盘 4397→4375 的 -21 点不足 30 未列入。</div>
+      <div class="src" style="margin-top:8px">注:8/17 亚盘 4367 企稳→4416 受阻→午后 4400 拉锯(10:55 低见 4389)→美盘初 4377→纽约尾盘 4428.87→收 4416.3,三段 ≥30 波段如上;尾盘 4428.87→收盘 4416.3(-12.6)与 8/18 早盘 4409.2→4435.7(+26.5)均不足 30 未列入,行情进行中,新波段每小时自动补充。</div>
     </div>
 
     <div class="card">
       <div class="sec-title">走势规律</div>
       <ol class="rules">
-        <li><b>教科书级"利好出尽"</b> — 8/13 PPI 环比持平、9月加息概率降至 34.8%,数据全是利好,金价却从 4449 一头栽下:8 月初以来涨超 10%、近 10 日涨 7%,利好早被买透,落地即止盈。<b>数据好≠金价涨。</b></li>
-        <li><b>4450-4500 铁顶,三冲不过</b> — StoneX 提前警告 4500 是强阻力,8/13 冲 4449.7(COMEX 4509)后直接回吐近百点;这个区域抛压极重。</li>
-        <li><b>技术面短期转空</b> — 跌破 MA5/MA10 转压制、RSI 回落至 32、MACD 红柱萎缩近死叉、4小时顶背离确认;反弹不收复 4360 就只是技术修复。</li>
-        <li><b>4310/4300 是短期生命线</b> — 8/14 亚盘砸到 4310 后美盘强劲拉回(+86 点),4310-4325 承接密集;4300 是多头最重要趋势分水岭,实体跌破看 4276、4220-4230。</li>
-        <li><b>资金面在"拆台"</b> — SPDR 黄金 ETF 在 4400 上方连续减持(8/14 减 2 吨至 1023.24 吨),美股创新高分流避险资金;中期靠央行购金托底(中国央行连续 21 个月增持、二季度全球净购金 288.9 吨),但短期定价权在获利盘手里。</li>
+        <li><b>8/17 低开高走、站稳 4400</b> — 早盘回踩 4367(07:50 低 4366.7)后单边拉升,09:40 触及 4416.29;午后 4400 拉锯(10:55 低见 4389),美盘初回踩 4377 二次探底,纽约尾盘冲 4428.87(+1.2%),收 4416.3(+0.92% vs 8/14 收盘 4375.8),站上 4400 关口。</li>
+        <li><b>8/18 高位窄幅震荡、蓄势 4450</b> — 高开 4416.95 后早盘回踩 4409.23(06:40 时段低 4410.73),09:20 前后冲 4435.73 逼近前高,现价 4423.32(+0.16% vs 昨收)高位运行;4410-4436 窄箱内多空僵持,100 日均线约 4400 托底。</li>
+        <li><b>驱动核心:弱美元+加息预期降温</b> — 7 月零售 -0.6%(2025 年 5 月以来最大单月跌幅)、7 月非农 -2.3 万、CPI 3.4%/PPI 4.7%,9 月加息概率降至 30-33%(CME FedWatch,一周前 48-55%),美元指数 99.3-99.6、连续七周阴跌;二季度全球央行净购金 289 吨(同比 +62%),中国央行连续 21 个月增持(7608 万盎司)。</li>
+        <li><b>4450 仍是硬顶,4436-4450 压力带</b> — 8/17 纽约尾盘 4428.87 与今日早盘 4435.73 两度逼近前高 4449.4 均未破;4400 上方获利盘密集,站稳 4436 才谈得上挑战 4450,不破则维持 4366-4450 箱体。</li>
+        <li><b>本周焦点:FOMC 纪要+杰克逊霍尔</b> — 8/20 凌晨美联储 7 月纪要(9-3 分裂票型)、8/21 杰克逊霍尔央行年会,是本周分水岭;美伊 60 天停火协议到期未延期,霍尔木兹通航骤降(周末仅 5 艘 vs 上周末 31 艘),布油 89.8-90.9(+2.65%)、WTI 84-85,油价高企强化通胀担忧,是 4450 难破的核心制约;纪要偏鸽 → 冲 4450,偏鹰 → 回踩 4400-4366。</li>
       </ol>
     </div>
 
     <div class="card">
       <div class="sec-title">短线关键位</div>
       <div class="kv">
-        <div><div class="lab">压力 1</div><div class="val red num">4360-4380 顶底转换带</div></div>
-        <div><div class="lab">压力 2</div><div class="val red num">4400 牛熊线</div></div>
-        <div><div class="lab">压力 3</div><div class="val red num">4449-4500 铁顶</div></div>
-        <div><div class="lab">支撑 1</div><div class="val green num">4310-4325 密集承接</div></div>
-        <div><div class="lab">支撑 2</div><div class="val green num">4300 生死线</div></div>
-        <div><div class="lab">支撑 3</div><div class="val green num">4276 次级支撑</div></div>
+        <div><div class="lab">压力 1</div><div class="val red num">4436-4450 今日高区/铁顶</div></div>
+        <div><div class="lab">压力 2</div><div class="val red num">4450 铁顶(三冲未破)</div></div>
+        <div><div class="lab">支撑 1</div><div class="val green num">4400-4410 整数关/今日低点</div></div>
+        <div><div class="lab">支撑 2</div><div class="val green num">4366-4377 昨日低区/美盘低</div></div>
+        <div><div class="lab">支撑 3</div><div class="val green num">4310 中期双底(8/14)</div></div>
       </div>
-      <div class="disc">一句话:4300 不破中期偏多格局未变,4450 不破就是箱体震荡 — 下周看 8 月非农和 CPI 能否给出突破催化剂。</div>
+      <div class="disc">一句话:4366 与 4450 构成当前箱体,FOMC 纪要前大概率区间震荡 — 站稳 4436 偏强看 4450,跌破 4400 看 4366-4377,4310 为中期承接。</div>
     </div>
   </div>
 
   <div class="card">
     <div class="sec-title">数据来源</div>
     <div class="src">
-      新浪财经"黄金最前沿"周评(2026-08-15)、DollarFX 现货金收盘价(2026-08-15)、金投网现货黄金行情(2026-08-14/15)、金价查询网(2026-08-14)、FX168/腾讯全球交易早报(2026-08-15/16)、21世纪经济报道、Kitco 周度调查(经 vietnam.vn 转引,2026-08-16)。
-      <br>注:不同来源日内数值略有出入(约 ±1-3 美元),波段区间为约数;精确分时轨迹以交易平台逐笔数据为准。市场周末休市,本页为静态复盘,非实时行情。
+      westock/新浪财经伦敦金现货(2026-08-17 18:04,开 4379.55/高 4416.29/低 4367.10/现 4393.96,昨收 4375.80)、金投网现货黄金行情(2026-08-18 09:20,实时 4425.47/高 4435.73/低 4409.23/今开 4416.95,昨收 4416.17)、gold-api.com(2026-08-18 09:22,现价 4426.20)、汇通财经 FX678(2026-08-18 07:53,8/17 现货收 4416.43 +0.93%、盘中高 4428.87、COMEX 期金 4473.70 +0.8%)、每经/Wind(2026-08-18,8/17 现货收 4415.97 +0.91%、COMEX 4473.1)、同花顺(8/17 收 4417 +1.08%,口径略差)、中金在线 cnfol(2026-08-17 14:52,开 4370.32/高 4416.10/低 4367.72/现 4401.45)、agentic 多源检索综述(2026-08-18 09:20,含 8/17 日内轨迹、驱动事件与机构观点)。
+      <br>注:不同来源日内数值略有出入(约 ±1-3 美元),8/17 收盘 4415.97-4417 多源口径取 4416.3,周开盘取 4379.6(westock),波段区间为约数;精确分时轨迹以交易平台逐笔数据为准。本页为定时复盘,实时价由 gold-api 每 30 秒刷新。
     </div>
   </div>
 
@@ -375,7 +370,7 @@
 })();
 
 (function(){
-  var BASE=4375.7;
+  var BASE=4416.3;
   var elPrice=document.getElementById('lxPrice');
   var elChg=document.getElementById('lxChg');
   var elTime=document.getElementById('lxTime');
@@ -450,8 +445,14 @@
   }
   function renderBands(bands){
     var tb=document.getElementById('tdBands');
-    if(!tb||!bands||!bands.length) return;
+    if(!tb) return;
     tb.innerHTML='';
+    if(!bands||!bands.length){
+      var tr0=document.createElement('tr');
+      tr0.innerHTML='<td colspan="5" style="color:var(--sub);text-align:center;padding:8px">今日暂无 ≥30 美元波段 · 每小时自动更新</td>';
+      tb.appendChild(tr0);
+      return;
+    }
     bands.forEach(function(b,i){
       var tr=document.createElement('tr');
       var cls=(b.dir==='up')?'up':'down';
@@ -461,6 +462,16 @@
         '<td class="num">'+b.startP.toFixed(1)+'→'+b.endP.toFixed(1)+'</td>'+
         '<td class="num '+cls+'">'+(b.dir==='up'?'+':'−')+Math.round(b.delta)+'</td>';
       tb.appendChild(tr);
+    });
+  }
+  function renderRules(rules){
+    var ol=document.getElementById('tdRules');
+    if(!ol||!rules||!rules.length) return;
+    ol.innerHTML='';
+    rules.forEach(function(t){
+      var li=document.createElement('li');
+      li.textContent=t;
+      ol.appendChild(li);
     });
   }
   function loadDayJson(){
@@ -478,6 +489,7 @@
           var e=document.getElementById('tdOpen'); if(e){ e.textContent=fmt(op); }
         }
         renderBands(d.bands);
+        renderRules(d.rules);
         var s=document.getElementById('tdSrc');
         if(s&&d.updatedAt){ s.textContent='云端自动快照 '+d.updatedAt+' · 当前价每 30 秒刷新,今日高低合并云端+会话内动态跟踪'; }
       })
